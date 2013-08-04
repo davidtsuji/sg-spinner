@@ -56,9 +56,9 @@ Spinner.prototype.hide = function() {
 
 	setTimeout(function(){
 
-		self.overlay.hide();
+		if (self.overlay) self.overlay.hide();
+		if (self.el) self.el.remove();
 		self.overlay = null;
-		self.el.remove();
 		self.el = null;
 		
 	}, 500);
