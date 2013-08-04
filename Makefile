@@ -15,4 +15,4 @@ demo:
 template.js: template.html
 	@component convert $<
 
-.PHONY: build install demo
+.PHONY: build install demo template.js
