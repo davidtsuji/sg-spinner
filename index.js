@@ -18,7 +18,7 @@ Spinner.prototype.show = function(_msToShowFor) {
 	self.el.addClass('bounceInUp');
 
 	self.overlay = new Overlay();
-	self.overlay.el.addClass('spinner').addClass('animated').addClass('fadeIn')
+	self.overlay.el.addClass('overlay-spinner').addClass('animated').addClass('fadeIn')
 	self.overlay.show();
 
 	dom('body').append(self.el);

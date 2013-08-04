@@ -533,7 +533,7 @@
   -o-animation-name: bounceOutDown;
   animation-name: bounceOutDown;
 }
-html > body > .overlay.spinner {
+html > body > .overlay.overlay-spinner {
   -webkit-animation-duration: 300ms;
   -moz-animation-duration: 300ms;
   animation-duration: 300ms;
