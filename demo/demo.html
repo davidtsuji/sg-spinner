@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sg-spinner demo</title>
+
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="build.css">
+	<script src="build.js"></script>
+
+</head>
+<body>
+
+	<div class="container">
+		
+		<div class="page-header">
+			<h1>Spinner Demo</h1>
+		</div>
+
+		<div class="well text-center">
+			
+			<button class="btn btn-default" data-sg-spinner-show>show spinner</button>
+
+		</div>
+
+	</div>
+
+	<script>
+
+		var spinner = require('sg-spinner')
+		  , dom = require('dom')
+
+		dom('body').on('click', '[data-sg-spinner-show]', function(_event){
+
+			_event.preventDefault();
+
+			spinner.show(1200);
+
+		});
+
+	</script>
+	
+</body>
+</html>

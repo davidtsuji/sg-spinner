@@ -1,0 +1,22 @@
+{
+  "name": "sg-spinner",
+  "repo": "davidtsuji/sg-spinner",
+  "description": "Shows a blocking spinner",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/dom":"*",
+    "component/overlay":"*",
+    "component/type":"*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "styles/spinner.css"
+  ]
+}

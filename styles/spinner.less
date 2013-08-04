@@ -1,0 +1,67 @@
+@import "animate.less";
+@import "overlay.less";
+
+html > body {
+
+	>.sg-spinner {
+
+		@dimensions: 60px;
+		@color: #ddd;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -(@dimensions / 2);
+		margin-top: -(@dimensions / 2);
+		z-index: 510;
+
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+
+		-webkit-animation-duration: 650ms;
+		-moz-animation-duration: 650ms;
+		animation-duration: 650ms;
+
+		.spinner {
+
+			position: absolute;
+			width: @dimensions;
+			height: @dimensions;
+			display: inline-block;
+		    
+		    div {
+				width: 10%;
+				height: 26%;
+				background-color: @color;
+				position: absolute;
+				left: 44.5%;
+				top: 37%;
+				opacity: 0;
+				-webkit-animation: fade 1s linear infinite;
+				-webkit-border-radius: @dimensions;
+		    }
+		    
+			div:nth-child(1) {-webkit-transform:rotate(0deg) translate(0, -142%); -webkit-animation-delay: 0s;}    
+			div:nth-child(2) {-webkit-transform:rotate(30deg) translate(0, -142%); -webkit-animation-delay: -0.9167s;}
+			div:nth-child(3) {-webkit-transform:rotate(60deg) translate(0, -142%); -webkit-animation-delay: -0.833s;}
+			div:nth-child(4) {-webkit-transform:rotate(90deg) translate(0, -142%); -webkit-animation-delay: -0.75s;}
+			div:nth-child(5) {-webkit-transform:rotate(120deg) translate(0, -142%); -webkit-animation-delay: -0.667s;}
+			div:nth-child(6) {-webkit-transform:rotate(150deg) translate(0, -142%); -webkit-animation-delay: -0.5833s;}
+			div:nth-child(7) {-webkit-transform:rotate(180deg) translate(0, -142%); -webkit-animation-delay: -0.5s;}
+			div:nth-child(8) {-webkit-transform:rotate(210deg) translate(0, -142%); -webkit-animation-delay: -0.41667s;}
+			div:nth-child(9) {-webkit-transform:rotate(240deg) translate(0, -142%); -webkit-animation-delay: -0.333s;}
+			div:nth-child(10) {-webkit-transform:rotate(270deg) translate(0, -142%); -webkit-animation-delay: -0.25s;}
+			div:nth-child(11) {-webkit-transform:rotate(300deg) translate(0, -142%); -webkit-animation-delay: -0.1667s;}
+			div:nth-child(12) {-webkit-transform:rotate(330deg) translate(0, -142%); -webkit-animation-delay: -0.0833s;}
+
+			@-webkit-keyframes fade {
+				from {opacity: 1;}
+				to {opacity: 0.25;}
+			}
+			
+		}
+
+	}
+
+}
